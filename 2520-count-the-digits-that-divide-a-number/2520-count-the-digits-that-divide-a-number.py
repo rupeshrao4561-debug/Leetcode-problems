@@ -1,7 +1,7 @@
 class Solution:
-    def countDigits(self, num: int) -> int:
-        temp = num
+    def countDigits(self, num):
         count = 0
+        temp = num
 
         while temp > 0:
             digit = temp % 10
@@ -9,6 +9,6 @@ class Solution:
             if num % digit == 0:
                 count += 1
 
-            temp //= 10
+            temp = temp // 10
 
         return count
